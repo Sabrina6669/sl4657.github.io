@@ -1,0 +1,14 @@
+---
+title: "Project overview"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: yeti
+---
+
+This project focuses on building a website.
+
+**First part** includes some necessary pages and links in the site navigation.
+
+**Second part** aims to create a flexdashboard including at least three distinct plot types.
