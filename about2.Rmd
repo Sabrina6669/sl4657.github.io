@@ -1,0 +1,41 @@
+---
+title: "Personal information"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: yeti
+---
+# Research experience
+
+## Research 1
+
+**Effects of Bee Intestinal Flora (Gilliamella apicola) on the Host’s Metabolism of Mannose**
+
+*Beijing Advanced Innovation Center for Food Nutrition and Human Health project*        *May.2018-Jun.2019*
+
+Gilliamella bacterial genus in bees’ ileum can help hosts degrade toxicity saccharides like mannose from the food. There are much in common between bee intestinal flora and that of humans, so we try to develop bee intestinal flora as a new symbiosis model system to explore human nutrition and health in the future.
+
+	Conducted PCR amplification and extracted manA genes from Gilliamella apicola with CTAB method and then carried out gene cloning
+
+	Planted in sterile bee intestinal flora Gilliamella apicola bacterial genus separately with and without manA genes and compared the differences of the bees’ resistance to mannose toxicity
+
+	Figured out Gilliamella apicola bacterial genus with manA genes could metabolize mannose to keep bees in good health
+
+	Considered using such ways of transforming Gilliamella apicola bacterial genus for metabolism of mannose into genes with the degradation ability of other toxicity saccharides so as to improve diet tolerance of bees
+
+## Research 2 
+
+**Precision Medicine, Green Prevention and Control for Wheat Stripe Rust**
+
+*School Undergraduate Research Project*                                                *Jul.2017-Jun.2019*
+
+On the basis of molecule detection technique and remote sensing monitoring technique for wheat stripe rust, trying to achieve the goal of precision medicine, green prevention and control by means of field GPS positioning, accurate monitoring, fixed-point pesticide application and non-pesticide control
+
+	Made quantitative measurement of wheat leaf DNA and stripe rust pathogens DNA with Real-time PCR, then calculated the wheat leaf molecular disease index(MDI)
+
+	Used UAV remote sensing to obtain field disease index(DI) 
+
+	Made regression analysis of MDI and DI and built the regression model with REG procedure of SAS statistical software
+
+	Figured out the significant correlation between MDI and DI, and proved the feasibility of defect inspection with Real-time PCR and UAV remote sensing
