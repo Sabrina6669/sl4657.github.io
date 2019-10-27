@@ -1,0 +1,17 @@
+---
+title: "My website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: yeti
+---
+
+This is a website about Sarah, please contact me if you have any questions.
+
+# More about project
+click [here](about1.html) to see more information
+
+# Personal info
+click [here](about2.html) to see academic and professional experience
+
