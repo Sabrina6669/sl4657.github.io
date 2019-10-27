@@ -1,0 +1,65 @@
+---
+title: "Some plots"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("rest_inspec")
+
+rest=
+rest_inspec %>% 
+  select(boro, grade, score, cuisine_description) %>% 
+  drop_na() %>% 
+  filter(boro == "MANHATTAN") 
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+rest %>% 
+  filter(cuisine_description%in% c("American","Spanish", "French", "Italian", "Korean", "Chinese", "Japanese")) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
+  plot_ly(y= ~score, color = ~cuisine_description,  type = "box", colors = "Set2")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+rest %>% 
+  group_by(grade, cuisine_description) %>% 
+  count() %>% 
+  filter(
+    grade %in% c("A", "B", "C"),
+    n %in% 500:3000) %>% 
+  plot_ly(x=~cuisine_description, y=~n, color=~grade, type="bar", colors = "Set3")
+```
+
+### Chart C
+
+```{r}
+rest_inspec %>%  
+  filter(boro!= "Missing", score<60) %>% 
+  drop_na() %>% 
+  group_by(boro, score) %>% 
+  count(score) %>%
+  plot_ly(x=~score, y=~n, color=~boro, type="scatter", mode = "markers")
+```
+
