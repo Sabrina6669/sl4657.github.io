@@ -1,0 +1,16 @@
+name: "Basic info"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About"
+      href: about1.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<sl4657@columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/Saraheee22/
+
+      
+output:
+  html_document:
+    theme: yeti
